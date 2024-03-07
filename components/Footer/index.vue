@@ -1,3 +1,7 @@
+<link rel="preconnect" href="https://fonts.googleapis.com"></link>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"></link>
+
 <template>
     <footer class="footer">
     <div class="footer_section">
@@ -53,26 +57,39 @@
                 <p>Telefon: 123 456 789</p>
                 <p>Email:</p>
                 <div class="social_media">
-                    <a href="#"><img src="https://cdn.iconscout.com/icon/free/png-256/facebook-185-498898.png" alt="facebook"></a>
+                    <a href="#"><img src="https://cdn.iconscout.com/icon/free/png-512/free-facebook-1664126-1412949.png" alt="facebook"></a>
                     <a href="#"><img src="https://cdn.iconscout.com/icon/free/png-256/instagram-233-896451.png" alt="instagram"></a>
                     <a href="#"><img src="https://cdn.iconscout.com/icon/free/png-256/twitter-1867541-1583140.png" alt="twitter"></a>
-                    <a href="#"><img src="https://cdn.iconscout.com/icon/free/png-256/youtube-1851563-1569283.png" alt="youtube"></a>
+                    <a href="#"><img src="https://cdn.iconscout.com/icon/free/png-512/free-twitter-9420782-7651212.png" alt="twitter"></a>
                 </div>
             </div>
         </div>
+        </div>
         <div class="payments">
             <div class="payments_images">
+                <img src="/public/footer/inpost.png" alt="inpost">
+                <img src="/public/footer/ups.png" alt="ups">
+                <img src="/public/footer/fedex.png" alt="fedex">
+                <img src="/public/footer/dts.png" alt="dts">
+                <img src="/public/footer/poczta_polska.png" alt="poczta_polska">
+                <img src="/public/footer/przelewy24.png" alt="przelewy24">
+                <img src="/public/footer/blik.png" alt="blik">
+                <img src="/public/footer/mastercard.png" alt="mastercard">
+                <img src="/public/footer/visa.png" alt="visa">
+                <img src="/public/footer/pko.png" alt="pko">
+                <img src="/public/footer/grenke.png" alt="grenke">
+                <img src="/public/footer/santander.png" alt="santander">
+                <img src="/public/footer/alior.png" alt="alior_bank">
+                <img src="/public/footer/allianz.png" alt="allianz">
             </div>
-            <div class="footer_info">
-                <p>Arkadiusz Dampc, Damian Gorski, Julia Korzeniewska, Andrzej Milewczyk, Mariusz Gwara</p>
-                <br>
-                <p>x-kom 2024</p>
-            </div>
-        </div>
     </div>
+    <div class="footer_info">
+                <p>Arkadiusz Dampc, Damian Gorski, Julia Korzeniewska, Andrzej Milewczyk, Mariusz Gwara</p>
+            </div>
     </footer>
 </template>
 
 <style lang="scss" scoped>
 @import './footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 </style>
