@@ -1,3 +1,3 @@
 <template>
-    <h3>index</h3>
+    <h3 style="min-height: 100vh;">index</h3>
 </template>
