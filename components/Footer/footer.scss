@@ -1,0 +1,83 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    
+    .footer_section {
+        display: flex;
+        justify-content: space-around;
+        
+        .footer_hyperlinks {
+            display: flex;
+            flex-direction: row;
+            
+            .first_column, .second_column, .third_column {
+                margin-right: 40px;
+                
+                h3 {
+                    color: #333;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                
+                ul {
+                    list-style: none;
+                    
+                    li {
+                        margin-bottom: 5px;
+                        
+                        a {
+                            text-decoration: none;
+                            color: #555;
+                            
+                            &:hover {
+                                color: #007bff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .contact {
+            .contact_info {
+                h3 {
+                    color: #333;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                
+                p {
+                    margin-bottom: 5px;
+                }
+                
+                .social_media {
+                    a {
+                        display: inline-block;
+                        margin-right: 10px;
+                        
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .payments {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            
+            .footer_info {
+                p {
+                    color: #555;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
