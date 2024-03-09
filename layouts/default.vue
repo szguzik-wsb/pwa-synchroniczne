@@ -1,3 +1,10 @@
+<script setup>
+const footerData = {
+    title: 'Kontakt'
+}
+</script>
+
+
 <template>
     <TopInfoBar>
         <template v-slot:title>
@@ -20,4 +27,8 @@
     <TopNav/>
       <slot/>
     <Footer/>
+    <FooterInfo 
+      :title="footerData.title" 
+      :content="'555 555 555'"
+    />
 </template>
