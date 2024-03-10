@@ -2,10 +2,12 @@
 </script>
 <template>
   <div class="info">
-<span>
-<slot name="title">Domyślna</slot>:
-</span>
-    <slot name="content">Domyślna</slot>
+    <span>
+        <slot name="title">Domyślna</slot>:
+    </span>
+    <span>
+        <slot name="content">Domyślna</slot>
+    </span>
   </div>
 </template>
 <style scoped lang="scss">

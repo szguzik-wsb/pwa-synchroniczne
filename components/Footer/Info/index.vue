@@ -1,5 +1,5 @@
 <script setup>
-defineProps(
+const props = defineProps(
     {
       title: {
         type: String,
@@ -12,12 +12,22 @@ defineProps(
     }
 )
 
+const description = ref(props.title)
+
+const clickbutton = () => description.value = 'Opis'
+const clickbutton2 = () => props.title = 'Opis' // ta operacja sie nie wykona bo props jest na modyfikatorze readonly
+
 </script>
 <template>
   <div>
     <h1>{{ title }}</h1>
     <p>{{ content }}</p>
+    <p>{{ description }}</p>
   </div>
+
+  <button @click="clickbutton">Klik</button>
+  <button @click="clickbutton2">Klik2</button>
+
 </template>
 <style scoped lang="scss">
 div {

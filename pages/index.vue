@@ -1,10 +1,12 @@
 <script setup>
 const fdataexternal = ref(await useFetch('https://jsonplaceholder.typicode.com/todos'))
+
 const fdatainternal = ref(await useFetch('http://localhost:3001/posts'))
 const { data } = await useFetch('/api/hello')
 
 console.log(fdataexternal.value.data)
 console.log(fdatainternal.value.data)
+console.log(data)
 </script>
 
 <template>
