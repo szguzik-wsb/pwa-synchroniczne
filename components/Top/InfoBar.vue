@@ -1,27 +1,26 @@
 <script setup>
 </script>
 <template>
-<div class="info">
+  <div class="info">
 <span>
 <slot name="title">Domyślna</slot>:
 </span>
-<slot name="content">Domyślna</slot>
-</div>
+    <slot name="content">Domyślna</slot>
+  </div>
 </template>
 <style scoped lang="scss">
 .info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: #000;
-    color: #fff; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
 
-    span {
-        margin-right: 10px;
-    }
+  span {
+    margin-right: 10px;
+  }
 }
 </style>
