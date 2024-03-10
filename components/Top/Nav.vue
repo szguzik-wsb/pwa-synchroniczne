@@ -1,4 +1,5 @@
 <script setup>
+const counter = useCounter();
 const mobileMenu = ref(false)
 const showMobileMenu = () => {
     mobileMenu.value = !mobileMenu.value
@@ -64,7 +65,7 @@ const showMobileMenu = () => {
         <div class="navbar-item">
             <div class="buttons">
             <a class="button is-primary">
-                <strong>Sign up</strong>
+                <strong>{{ counter }}</strong>
             </a>
             <a class="button is-light">
                 Log in
