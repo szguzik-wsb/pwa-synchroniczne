@@ -1,98 +1,103 @@
 <script setup>
 const mobileMenu = ref(false)
 const showMobileMenu = () => {
-    mobileMenu.value = !mobileMenu.value
+  mobileMenu.value = !mobileMenu.value
 }
 </script>
 <template>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <NuxtLink class="navbar-item logo" to="/">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-        </NuxtLink>
+      <NuxtLink class="navbar-item logo" to="/">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </NuxtLink>
 
-        <a role="button" 
-        class="navbar-burger" 
-        aria-label="menu" 
-        aria-expanded="false" 
-        data-target="navbarBasicExample"
-        @click="showMobileMenu"
-        >
+      <a role="button"
+         class="navbar-burger"
+         aria-label="menu"
+         aria-expanded="false"
+         data-target="navbarBasicExample"
+         @click="showMobileMenu"
+      >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
-        </a>
+      </a>
     </div>
 
     <div id="navbarBasicExample" :class="{'navbar-menu': !mobileMenu}">
-        <div class="navbar-start">
-            <a class="navbar-item" href="/list">
-                Lista produktów (nie spa)
-            </a>
-            <NuxtLink class="navbar-item" to="/list">
-                Lista produktów
-            </NuxtLink>
- 
-            <a class="navbar-item">
-            Documentation
+      <div class="navbar-start">
+        <a class="navbar-item" href="/list">
+          Lista produktów (nie spa)
+        </a>
+        <NuxtLink class="navbar-item" to="/list">
+          Lista produktów
+        </NuxtLink>
+
+        <a class="navbar-item">
+          Documentation
         </a>
 
         <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
+          <a class="navbar-link">
             More
-            </a>
+          </a>
 
-            <div class="navbar-dropdown">
+          <div class="navbar-dropdown">
             <a class="navbar-item">
-                About
+              About
             </a>
             <a class="navbar-item">
-                Jobs
+              Jobs
             </a>
             <a class="navbar-item">
-                Contact
+              Contact
             </a>
             <hr class="navbar-divider">
             <a class="navbar-item">
-                Report an issue
+              Report an issue
             </a>
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
 
-        <div class="navbar-end">
+      <div class="navbar-end">
         <div class="navbar-item">
-            <div class="buttons">
+          <div class="buttons">
             <a class="button is-primary">
-                <strong>Sign up</strong>
+              <strong>Sign up</strong>
             </a>
             <a class="button is-light">
-                Log in
+              Log in
             </a>
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
-    </nav>
+  </nav>
 </template>
 <style scoped>
 .navbar {
-    background-color: #058549;
+  background-color: #058549;
 }
+
 .navbar-menu {
-    position: absolute;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
-.navbar-menu.is-active {    background-color: #00d1b2;}
+
+.navbar-menu.is-active {
+  background-color: #00d1b2;
+}
+
 .navbar-menu a {
-    color: #fff;
-    
+  color: #fff;
+
 }
 
 .logo {
-    @media screen and (max-width: 1023px) {
-        display: none;
-    } 
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 }
 </style>
