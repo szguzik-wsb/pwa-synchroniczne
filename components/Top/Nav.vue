@@ -8,7 +8,7 @@ const showMobileMenu = () => {
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <NuxtLink class="navbar-item logo" to="/">
-        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Logo">
       </NuxtLink>
 
       <a role="button"
@@ -84,10 +84,6 @@ const showMobileMenu = () => {
   position: absolute;
   left: 0;
   width: 100%;
-}
-
-.navbar-menu.is-active {
-  background-color: #00d1b2;
 }
 
 .navbar-menu a {
