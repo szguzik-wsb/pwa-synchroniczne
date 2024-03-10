@@ -27,8 +27,5 @@ const footerData = {
     <TopNav/>
       <slot/>
     <Footer/>
-    <FooterInfo 
-      :title="footerData.title" 
-      :content="'555 555 555'"
-    />
+    <FooterInfo :title="footerData.title" :content="'555 555 555'"/>
 </template>
